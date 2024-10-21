@@ -12,7 +12,7 @@ const GamePage = () => {
   const [round, setRound] = useState(1);
   const [winner, setWinner] = useState("");
 
-  const baseUrl = import.meta.env.VITE_PUBLIC_BACKEND_URL;
+  const baseUrl = 'https://be-4-h1ar.onrender.com';
 
   const choices = [
     { label: "Stone", icon: <FaHandRock size={50} /> },

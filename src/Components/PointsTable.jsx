@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 
 const PointsTable = () => {
   const [gameRecord, setGameRecord] = useState([]);
-  const baseUrl = import.meta.env.VITE_PUBLIC_BACKEND_URL;
+  const baseUrl = 'https://be-4-h1ar.onrender.com';
   const fetchRecord = async () => {
     try {
       const response = await axios.get(`${baseUrl}/game/getRecord`);
